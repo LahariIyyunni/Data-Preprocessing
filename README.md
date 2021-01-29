@@ -32,12 +32,18 @@ vice versa is underfitting
 
 Feature scaling - scales all the features to make sure they are on the right scale so as to make sure that one feature doesn't dominate the other
 
+standardscaler class from preprocessing
 
 Do we need to do Feature scaling before splitting the data into training and test sets or after ?
 >>> We HAVE to do it after because 
 feature scaling will get the standard deviation and mean of the features, if we do it before the split then it will get these values for both training and tes
 and there is no point of doing that we don't know the performance of model on test set
-Instead 
+
+Do we have to perform feature scaling on the dummy variable/encoded variables?
+
+No - Goal is to have all the values of features/variables in a range and since they are already in the range because of encoding
+
+We will get nonsense values and won't improve
 
 
 
